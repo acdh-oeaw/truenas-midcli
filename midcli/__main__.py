@@ -207,7 +207,7 @@ class CLI:
 
         self.loop = asyncio.get_event_loop()
 
-        self.loop.add_signal_handler(signal.SIGUSR1, self._sigusr1_handler)
+        # self.loop.add_signal_handler(signal.SIGUSR1, self._sigusr1_handler)
 
         is_tty1 = False
         try:

@@ -44,7 +44,7 @@ class CallMixin:
                         schema, rest = self.context.url.split("://")
                         hostname_port = rest.split("/")[0]
                         http_url = f"http{schema.removeprefix('ws')}://{hostname_port}"
-                        verify = True
+                        verify = False
                     else:
                         http_url = f"http://127.0.0.1:{c.call('system.general.config')['ui_port']}"
                         verify = False

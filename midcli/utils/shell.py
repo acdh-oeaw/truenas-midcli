@@ -1,7 +1,7 @@
 # -*- coding=utf-8 -*-
 import logging
 import os
-import pwd
+# import pwd
 import sys
 
 logger = logging.getLogger(__name__)

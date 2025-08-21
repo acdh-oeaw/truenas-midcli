@@ -251,7 +251,7 @@ class Context:
         recoverable_errors = 0
         while True:
             try:
-                c = Client(self.url, private_methods=True, call_timeout=self.timeout)
+                c = Client(self.url, private_methods=True, call_timeout=self.timeout, verify_ssl=False)
 
                 if self.user and self.password:
                     if not c.call('auth.login', self.user, self.password):
