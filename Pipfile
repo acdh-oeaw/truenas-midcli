@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+prompt-toolkit = "*"
+truenas_api_client = {editable = true,path = "./../truenas-api-client"}
+requests = "*"
+click = "*"
+pyparsing = "*"
+prettytable = "*"
+pyyaml = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.13"
